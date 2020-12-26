@@ -8,14 +8,6 @@ RUN apk add --no-cache --virtual .deps zip wget && \
   mv lin* /lin && \
   apk del .deps
 
-#ADD https://github.com/GuntharDeNiro/BTCT/releases/download/2100/lin_v14.zip /tmp/
-
-#WORKDIR /tmp
-
-#RUN unzip -q /tmp/lin*.zip && rm -rf /tmp/lin*.zip
-
-#RUN mv lin* /lin
-
 WORKDIR /lin
 
 ENTRYPOINT ["./gunthy-linux"]
