@@ -9,6 +9,8 @@ RUN apt update && \
   mv lin* /lin && \
   apt-get remove --purge --auto-remove -y unzip && \
   rm -rf /var/lib/apt/lists/*
+
+EXPOSE 5000
   
 WORKDIR /lin
 
